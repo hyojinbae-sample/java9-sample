@@ -229,9 +229,6 @@ curl -v -j -k -L -H \
          > jdk-9_linux-x64_bin.tar.gz
 ```
 
-```bash
-cp ./runtime-image/jdk-9_linux-x64_bin.tar.gz .
-```
 
 ```bash
 mkdir jdk9-linux64
