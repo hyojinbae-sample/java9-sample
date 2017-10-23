@@ -18,7 +18,7 @@
 소스코드만 봐서는 파악하기 어려운 부분이 있다
 
 ### Goal (JSR 376에 의하면)
-- Reliable coniguration
+- Reliable configuration
 - Strong encapsulation
 - Scalable Java platform
 - Greater platform integrity
@@ -33,7 +33,7 @@
 
 ### 개발자에게 가장 체감되는 변화?
 접근 제한을 세밀하게 조정할 수 있다
-[](https://image.slidesharecdn.com/preparingforjava9modulesupload-170620090845/95/preparing-for-java-9-modules-upload-18-1024.jpg?cb=1497949799)
+![Java Accessibility](https://image.slidesharecdn.com/preparingforjava9modulesupload-170620090845/95/preparing-for-java-9-modules-upload-18-1024.jpg?cb=1497949799)
 
 ## 살펴보기
 백문이 불여일견 일단 만들어보자.
