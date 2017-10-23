@@ -182,7 +182,7 @@ docker run -it --rm -v $(pwd)/runtime-image/target/libs:/java-sample -w /java-sa
 ```bash
 pwd
 ls -arlt
-java -cp "./*" com.hyojinbae.sample.java9.application.Application
+java -p "runtime-image/target/libs" --add-modules usemodule.application com.hyojinbae.sample.java9.application.Application
 exit
 ```
 다음과 같은 메시지가 출력되며 실행되지 않음
