@@ -101,7 +101,6 @@ public class Application {
                 ;
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("uuuu년 MM월 dd일 HH시 mm분 ss초");
-        System.out.println();
         System.out.println("   - ITC인재교류회 제1회 정보공유회, "+ formatter.format(LocalDateTime.now()));
     }
 
