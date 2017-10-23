@@ -51,7 +51,7 @@
 - [Docker](https://docs.docker.com/engine/installation/) 설치
 
 ### 애플리케이션 구성
-- api, impl-english, korean-english, application, 4개의 프로젝트로 구성된 Maven 멀티 프로젝트 구성
+- api, impl-english, impl-english, application, 4개의 프로젝트로 구성된 Maven 멀티 프로젝트 구성
   ![](show-dependencies-normal.png)
 
 - 소개할 내용(3가지)
