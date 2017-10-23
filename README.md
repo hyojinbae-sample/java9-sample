@@ -70,9 +70,9 @@ public interface HelloService {
 
 #### impl-english
 ```java
-public class Englishimpl implements Helloservice {
+public class EnglishImpl implements HelloService {
 
-    public string hello() {
+    public String hello() {
         return "hello!";
     }
 
