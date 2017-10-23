@@ -256,7 +256,7 @@ localedef -c -f UTF-8 -i ko_KR ko_KR.utf8
   - automatic module
   - unnamed module
 - 모듈간 참조 관계
-![](https://image.slidesharecdn.com/java9migrationjavaland2017-170329080118/95/migrating-to-java-9-modules-35-638.jpg?cb=1490775663)
-![](https://image.slidesharecdn.com/java9migrationjavaland2017-170329080118/95/migrating-to-java-9-modules-36-638.jpg?cb=1490775663)
-![](https://image.slidesharecdn.com/java9migrationjavaland2017-170329080118/95/migrating-to-java-9-modules-37-638.jpg?cb=1490775663)
-- module descriptor syntax
+  - ![](https://image.slidesharecdn.com/java9migrationjavaland2017-170329080118/95/migrating-to-java-9-modules-35-638.jpg?cb=1490775663)
+  - ![](https://image.slidesharecdn.com/java9migrationjavaland2017-170329080118/95/migrating-to-java-9-modules-36-638.jpg?cb=1490775663)
+  - ![](https://image.slidesharecdn.com/java9migrationjavaland2017-170329080118/95/migrating-to-java-9-modules-37-638.jpg?cb=1490775663)
+- [module descriptor syntax 자세히 보기](https://qiita.com/opengl-8080/items/1007c2b2543c2fe0d7d5#requires-%E3%81%AE%E4%BF%AE%E9%A3%BE%E5%AD%90)
