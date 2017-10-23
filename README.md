@@ -25,7 +25,7 @@
 - Improved performance
 
 > 자바가 출시된 1995년 이래 IoT나 임베디드 시스템과 같이 리소스가 제한적인 
-> 장치에서부터 사용되는 소형 어플리케이션에서부터 비지니의와 업무의 
+> 장치에서부터 사용되는 소형 어플리케이션에서부터 비지니스의 업무의 
 > 핵심을 이루는 대형시스템에 이르기까지 다양하게 이용되지만 
 > 플랫폼은 획일적인 단일 크기의 솔루션이었다.
 >
@@ -51,7 +51,7 @@
 - [Docker](https://docs.docker.com/engine/installation/) 설치
 
 ### 애플리케이션 구성
-- app, impl-english, korean-english, application, 4개의 프로젝트로 구성된 Maven 멀티 프로젝트 구성
+- api, impl-english, korean-english, application, 4개의 프로젝트로 구성된 Maven 멀티 프로젝트 구성
   ![](show-dependencies-normal.png)
 
 - 소개할 내용(3가지)
@@ -160,10 +160,20 @@ mvn clean package
 java -cp "runtime-image/target/libs/*" com.hyojinbae.sample.java9.application.Application
 ```
 
+※ class path에 추가하면 실행은 되지만 모듈로서 동작하지는 않기 떄문에? impl-english, impl-korean이 ServiceLoader로부터 로드되지 않음
+
+#### 애플리케이션 실행(module path에 추가하는 방법)
 
 ```bash
-java -p "runtime-image/target/libs" com.hyojinbae.sample.java9.application.Application
+java -p "runtime-image/target/libs" --add-modules usemodule.application com.hyojinbae.sample.java9.application.Application
 ```
+
+```bash
+java -p "runtime-image/target/libs/api-1.0-SNAPSHOT.jar:runtime-image/target/libs/application-1.0-SNAPSHOT.jar:runtime-image/target/libs/impl-korean-1.0-SNAPSHOT.jar" --add-modules usemodule.application com.hyojinbae.sample.java9.application.Application
+```
+
+※ module path에 추가하지 않은 모듈(impl-english) 는 실행되지 않음.
+
 #### JRE가 설치되지 않은 환경에서 실행해보기
 ```yml
 docker run -it --rm -v $(pwd)/runtime-image/target/libs:/java-sample -w /java-sample centos /bin/bash
